@@ -4,6 +4,7 @@ const endpointsEntry = document.getElementById('endpoints-entrypoint')
 const booksEntrypoint = document.getElementById('books-entrypoint')
 
 async function loadEndpoints () {
+ 
   return await fetch(APIBASE)
     .then(res => res.json())
     .then(json => {
