@@ -1,4 +1,4 @@
 .hero-bg {
-    background-image: url("./got.jpg") !important;
-    background-size: cover;
+  background-image: url('./got.jpg') !important;
+  background-size: cover;
 }
