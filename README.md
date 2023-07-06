@@ -14,10 +14,13 @@ To complete this exercise, follow these steps:
 
 Replace <my_name> with your name and <task_number> with the task from the list below.
 
-- Write the code to:
+Example: If your name is **João** and you are solving task **1**, your branch must be **joao_1**.
+
+- After completing the code, create a pull request for your branch and ask for my review.
+
+## Task's list
 
 | Task number | Description |
 |---|---|
 | 1 | In th columns "Books", the name of each book must be a link to the book URL, but in such a way that the corresponding page will open in another tab.|
 
-- After completing the code, create a pull request for your branch and ask for my review.
