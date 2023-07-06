@@ -10,10 +10,14 @@ To complete this exercise, follow these steps:
 
 - Create a branch with your name
 
-```git checkout -b <my_name>```  (Replace <my_name> with your name, ok?)
+```git checkout -b <my_name>_<task_number>```  
+
+Replace <my_name> with your name and <task_number> with the task from the list below.
 
 - Write the code to:
 
-| Task | Description |
+| Task number | Description |
 |---|---|
 | 1 | In th columns "Books", the name of each book must be a link to the book URL, but in such a way that the corresponding page will open in another tab.|
+
+- After completing the code, create a pull request for your branch and ask for my review.
