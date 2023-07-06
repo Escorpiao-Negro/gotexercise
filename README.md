@@ -6,7 +6,7 @@ To complete this exercise, follow these steps:
 
 - Clone this repository
 
-```git clone git@github.com:EdDeAlmeidaJr/gotexercise.git```
+```git clone git@github.com:Escorpiao-Negro/gotexercise.git```
 
 - Create a branch with your name
 
