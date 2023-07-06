@@ -3,7 +3,8 @@ const APIBASE = 'https://www.anapioficeandfire.com/api'
 const endpointsEntry = document.getElementById('endpoints-entrypoint')
 const booksEntrypoint = document.getElementById('books-entrypoint')
 
-async function loadEndpoints () {
+
+async function loadEndpoints() {
   return await fetch(APIBASE)
     .then(res => res.json())
     .then(json => {
@@ -17,17 +18,24 @@ async function loadEndpoints () {
     })
 }
 
-async function loadBooks () {
+
+async function loadBooks() {
   return await fetch(APIBASE + '/books')
     .then(res => res.json())
     .then(json => {
       json.forEach(l => {
-        const liItem = document.createElement('li')
-        liItem.innerHTML = `<span>${l.name}</span>`
+        const liItem = document.createElement('li', '<a></a>')
+        liItem.innerHTML = `<span><a href="${l.url}" target="_blank"">${l.name}</span></a>`
         booksEntrypoint.appendChild(liItem)
       })
     })
 }
 
+
+
+
+
+
 loadEndpoints()
 loadBooks()
+
