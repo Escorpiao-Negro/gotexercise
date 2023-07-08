@@ -4,6 +4,7 @@ const endpointsEntry = document.getElementById('endpoints-entrypoint')
 const booksEntrypoint = document.getElementById('books-entrypoint')
 
 async function loadEndpoints () {
+ 
   return await fetch(APIBASE)
     .then(res => res.json())
     .then(json => {
@@ -23,7 +24,7 @@ async function loadBooks () {
     .then(json => {
       json.forEach(l => {
         const liItem = document.createElement('li')
-        liItem.innerHTML = `<span>${l.name}</span>`
+        liItem.innerHTML = `<a target="_new" href="${l.url}">${l.name}</a>`
         booksEntrypoint.appendChild(liItem)
       })
     })
