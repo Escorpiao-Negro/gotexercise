@@ -23,11 +23,16 @@ async function loadBooks () {
     .then(json => {
       json.forEach(l => {
         const liItem = document.createElement('li')
-        liItem.innerHTML = `<span>${l.name}</span>`
+        liItem.innerHTML = `<a target="_blank" href="${l.url}" >${l.name}</a>` //Alterei de o target para "_blank", assim abre em outra página.
         booksEntrypoint.appendChild(liItem)
+        console.log(liItem);
       })
+      
     })
 }
+
+
+
 
 loadEndpoints()
 loadBooks()
