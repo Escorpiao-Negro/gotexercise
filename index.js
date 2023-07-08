@@ -23,7 +23,7 @@ async function loadBooks () {
     .then(json => {
       json.forEach(l => {
         const liItem = document.createElement('li')
-        liItem.innerHTML = `<span>${l.name}</span>`
+        liItem.innerHTML = `<a href=${l.url}>${l.name}</a>`
         booksEntrypoint.appendChild(liItem)
       })
     })
